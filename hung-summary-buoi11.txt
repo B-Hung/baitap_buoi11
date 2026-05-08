@@ -1,0 +1,18 @@
+Hostname server: cs-linux-20260504052434314
+IP server: 202.92.7.123
+So container dang chay: 2
+Ten container web: hung-nginx
+Ten container database: hung-volume
+Port web dang dung: 8085
+Port database đang dùng: 3307
+Volume dang luu du lieu: hungmysql-volume
+
+3 rui ro ky thuat e thay:
+  1. Container web chua co volume, neu xoa container se mat toan bo code/du lieu web.
+  2. Port database (3307) dang mo cong khai, de bi tan cong tu ben ngoai
+  3. Khi tao va chay container phai chu y den cong port cua host xem da co container nao dung chua neu da co container dung roi ma van dung thi se bao loi.
+
+3 viec em se lam neu đuoc giao van hanh server nay:
+  1. Thiet lap Backup tu dong cho cac Docker Volume đinh ky.
+  2. Cau hinh đe chi cho phep cac IP tin cay truy cap vao port Database.
+  3. Su dung Docker đe quan ly cac container tap trung va bao mat bian moi truong bang file .env.
